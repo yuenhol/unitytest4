@@ -35,9 +35,10 @@ jobs:
         uses: webbertakken/unity-builder@v2.0-alpha-6
         with:
           targetPlatform: Android
+          allowDirtyBuild: true
 
       # Output
       - uses: actions/upload-artifact@v1
         with:
           name: Build
-          path: build
+          path: /home/runner/work/unitytest2/unitytest2/build/Android/Android.apk
